@@ -1,7 +1,10 @@
 package codefinity;
 
 public class Main {
+    private static final ExceptionHandlingExercise exceptionHandlingExercise
+            = new ExceptionHandlingExercise();
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        exceptionHandlingExercise.checkAge(17);
+        exceptionHandlingExercise.printLength(null);
     }
 }
