@@ -3,7 +3,7 @@ package codefinity;
 public class ExceptionHandlingExercise {
 
     // Method that causes an IllegalArgumentException
-    public void checkAge(int age) {
+    public void checkAge(int age) throws IllegalArgumentException {
         if (age < 18) {
             throw new IllegalArgumentException("Access denied - You must be at least 18 years old.");
         } else {
@@ -12,7 +12,7 @@ public class ExceptionHandlingExercise {
     }
 
     // Method that causes a NullPointerException
-    public void printLength(String str) {
+    public void printLength(String str) throws NullPointerException {
         if (str == null) {
             throw new NullPointerException("String value is null.");
         } else {
